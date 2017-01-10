@@ -1,18 +1,18 @@
 # LecteurOPUS
 Lecteur Opus est une application Android pour lire les informations des cartes de transport OPUS et les cartes de transport occasionnelles.
-Il permet d'afficher les titres de transport disponibles sur la carte et les trajets effectués. 
+Elle permet d'afficher les titres de transport disponibles sur la carte et les trajets effectués. 
 
 L'application est toujours en développement et plusieurs réseaux de transport et numéro d'autobus sont manquants.
 
-Tester et fonctionnel pour le :
+Fonctionnel pour le :
 * RTC (Réseau de transport de la Capitale)
 * STM (Société de transport de Montréal)
 
 ![screen1](https://raw.githubusercontent.com/etiennedub/LecteurOPUS/master/image/screen1.png)
 ![screen2](https://raw.githubusercontent.com/etiennedub/LecteurOPUS/master/image/screen2.png)
 ## Utilisation
-Appuyez une carte compatible à l'arrière de votre appareil et les informations vont s'afficher. 
-Si le réseau de transport ou le numéro de bus est inconnu, l'utilisateur peut entrer ces informations qu'ils vont être transmis pour les ajouter lors d'une version ultérieure.
+Déposez une carte compatible à l'arrière de votre appareil et les informations s'afficheront. 
+Si le réseau de transport ou le numéro de bus est inconnu, l'utilisateur peut entrer les informations manquantes qui seront automatiquement transmises aux développeurs afin de les ajouter à une version ultérieure.
 
 ## Installation
 #### Google Play 
@@ -26,5 +26,5 @@ Toutes les sources sont disponibles dans le dépôt. AndroidStudioProject est ut
 
 * Identifier les différents réseaux de transport de transport
 * Identifier tous les parcours
-* Ajout d'un historique
+* Ajouter un historique
 
