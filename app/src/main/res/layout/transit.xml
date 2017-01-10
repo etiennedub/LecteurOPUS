@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutMainTransit"
+                android:background="#ffffff"
+                android:layout_margin="30dp">
+
+                <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|center_vertical"
+        android:gravity="center_vertical"
+                    android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/imageBus"
+            android:background="@null"
+            android:layout_gravity="left|center_vertical" />
+
+        <Space
+            android:layout_width="40px"
+            android:layout_height="20px" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="METROBUS 801"
+                android:id="@+id/textBus" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="CORESPONDANCE"
+                            android:id="@+id/textTransfer"
+                            android:textSize="10dp"
+                            android:layout_gravity="bottom"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="40px"
+                        android:layout_height="20px" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/addButton"
+                        android:layout_gravity="left|center"
+                        android:src="@android:drawable/ic_menu_add"
+                        android:background="#ffffff"
+                        android:clickable="true"
+                        android:onClick="addUnknown"
+                        android:nestedScrollingEnabled="false" />
+
+                </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/imageDate"
+            android:background="@null"
+            android:src="@drawable/calendar" />
+
+        <Space
+            android:layout_width="40px"
+            android:layout_height="20px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Date ici"
+            android:id="@+id/textDate" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/imageView7"
+            android:src="@drawable/time" />
+
+        <Space
+            android:layout_width="40px"
+            android:layout_height="20px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Heure ici"
+            android:id="@+id/textTime" />
+    </LinearLayout>
+
+    <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#5e5e5e" />
+</LinearLayout>

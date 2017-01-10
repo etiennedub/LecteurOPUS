@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rtc>
+    <bus id="95" name="METROBUS 800" logo="metrobus" />
+    <bus id="96" name="METROBUS 801" logo="metrobus" />
+    <bus id="172" name="METROBUS 803" logo="metrobus" />
+    <bus id="61" name="METROBUS 807" logo="metrobus" />
+    <bus id="16" name="LEBUS 28" logo="lebus" />
+    <bus id="41" name="LEBUS 74" logo="lebus" />
+    <bus id="16" name="LEBUS 28" logo="lebus" />
+    <bus id="12" name="LEBUS 18" logo="lebus" />
+    <bus id="47" name="LEBUS 87" logo="lebus" />
+    <bus id="39" name="LEBUS 77" logo="lebus" />
+    <bus id="7" name="LEBUS 11" logo="lebus" />
+    <bus id="1" name="LEBUS 1" logo="lebus" />
+    <bus id="3" name="LEBUS 4" logo="lebus" />
+    <bus id="2" name="LEBUS 3" logo="lebus" />
+    <bus id="50" name="LEBUS 19" logo="lebus" />
+    <bus id="37" name="LEBUS 74" logo="lebus" />
+    <bus id="78" name="EXPRESS 330" logo="express" />
+    <bus id="84" name="EXPRESS 350" logo="express" />
+    <bus id="88" name="EXPRESS 377" logo="express" />
+</rtc>

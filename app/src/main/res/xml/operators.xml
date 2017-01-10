@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<operators>
+    <operator id="10" name="RTC" file="rtc" logo="rtc" />
+    <operator id="4" name="STM" file="" logo="stm" />
+</operators>

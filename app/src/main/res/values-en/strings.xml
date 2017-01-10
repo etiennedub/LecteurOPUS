@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OPUS Reader</string>
+    <string name="card_occa">OCCASIONAL CARD</string>
+    <string name="card_opus">OPUS CARD</string>
+    <string name="expiration">Expiration : </string>
+    <string name="ticket_remaining">ticket remaining</string>
+    <string name="tickets_remaining">tickets remaining</string>
+    <string name="last_trip">LAST TRIP</string>
+    <string name="last_trips">LAST TRIPS</string>
+    <string name="unknown">Unknown</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+    <string name="help_us">Help us improve the application !</string>
+    <string name="thank_contribution">Thank you for your contribution</string>
+    <string name="operator_hint">Transit agencies (RTC, STM, ...)</string>
+    <string name="number_hint">Bus route</string>
+    <string name="card_id">Card ID</string>
+    <string name="tap_card">Hold your card on the back of your device.</string>
+    <string name="nfc_disable">You need to turn on NFC to continue.</string>
+    <string name="disable_title">NFC disabled</string>
+    <string name="subscrip_title">PASS</string>
+    <string name="until">Valid until</string>
+    <string name="title_activity_card">activity card</string>
+</resources>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Lecteur OPUS</string>
+    <string name="card_occa">CARTE OCCASIONNELLE</string>
+    <string name="card_opus">CARTE OPUS</string>
+    <string name="expiration">Expiration : </string>
+    <string name="ticket_remaining">billet restant</string>
+    <string name="tickets_remaining"> billets restants</string>
+    <string name="last_trip">DERNIER PASSAGE</string>
+    <string name="last_trips">DERNIERS PASSAGES</string>
+    <string name="unknown">Inconnu</string>
+    <string name="send">Envoyer</string>
+    <string name="cancel">Annuler</string>
+    <string name="help_us">Aidez-nous à améliorer l\'application !</string>
+    <string name="thank_contribution">Merci de votre contribution.</string>
+
+    <string name="title_activity_card">activity card</string>
+    <string name="operator_hint">Réseau de transport (RTC, STM, ...)</string>
+    <string name="number_hint">Numéro du parcours</string>
+    <string name="card_id">Identifiant de la carte</string>
+    <string name="tap_card">Laissez votre carte à l\'endos de votre appareil.</string>
+    <string name="nfc_disable">Veuillez activer le NFC pour continuer.</string>
+    <string name="disable_title">NFC désactivé</string>
+    <string name="subscrip_title">LAISSEZ-PASSER</string>
+    <string name="until">Valide jusqu\'au</string>
+</resources>
+
+
