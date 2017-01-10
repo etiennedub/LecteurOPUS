@@ -8,8 +8,8 @@ Tester et fonctionnel pour le :
 * RTC (Réseau de transport de la Capitale)
 * STM (Société de transport de Montréal)
 
-![screen1](https://raw.githubusercontent.com/etiennedub/LecteurOPUS/image/screen1.png)
-![screen2](https://raw.githubusercontent.com/etiennedub/LecteurOPUS/image/screen2.png)
+![screen1](https://raw.githubusercontent.com/etiennedub/LecteurOPUS/master/image/screen1.png)
+![screen2](https://raw.githubusercontent.com/etiennedub/LecteurOPUS/master/image/screen2.png)
 ## Utilisation
 Appuyez une carte compatible à l'arrière de votre appareil et les informations vont s'afficher. 
 Si le réseau de transport ou le numéro de bus est inconnu, l'utilisateur peut entrer ces informations qu'ils vont être transmis pour les ajouter lors d'une version ultérieure.
