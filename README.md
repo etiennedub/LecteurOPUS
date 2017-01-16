@@ -4,7 +4,7 @@ Elle permet d'afficher les titres de transport disponibles sur la carte et les t
 
 L'application est toujours en développement et plusieurs réseaux de transport et numéro d'autobus sont manquants.
 
-Fonctionnel pour le :
+Fonctionnelle pour le :
 * RTC (Réseau de transport de la Capitale)
 * STM (Société de transport de Montréal)
 
@@ -16,7 +16,7 @@ Si le réseau de transport ou le numéro de bus est inconnu, l'utilisateur peut 
 
 ## Installation
 #### Google Play 
-L'application est disponible sur le Google Play.
+L'application est disponible sur Google Play.
 
 <a href='https://play.google.com/store/apps/details?id=etienned.lecteuropus'><img alt='Disponible sur Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/fr-ca_badge_web_generic.png'/></a>
 #### Compiler
@@ -24,7 +24,7 @@ Toutes les sources sont disponibles dans le dépôt. AndroidStudioProject est ut
 
 ## TODO
 
-* Identifier les différents réseaux de transport de transport
+* Identifier les différents réseaux de transport
 * Identifier tous les parcours
 * Ajouter un historique
 
