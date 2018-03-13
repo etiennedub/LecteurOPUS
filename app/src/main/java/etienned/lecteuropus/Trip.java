@@ -44,9 +44,8 @@ public class Trip implements Serializable {
             m_DateTime = Utils.intToDateTime(days, mins1);
 
             // Bus number
-            m_busId = Utils.bytesToInt(page1, 13, 7);
-            m_operatorId = Utils.bytesToInt(page2, 8, 6);
-
+            m_busId = Utils.bytesToInt(page1, 11, 9);
+            m_operatorId = Utils.bytesToInt(page2, 7, 8);
         }
     }
 
@@ -60,8 +59,8 @@ public class Trip implements Serializable {
         int mins = Utils.bytesToInt(transitData, 14, 11);
         m_DateTime = Utils.intToDateTime(days, mins);
 
-        m_busId  = Utils.bytesToInt(transitData, 94, 7);
-        m_operatorId = Utils.bytesToInt(transitData, 64, 6);
+        m_busId  = Utils.bytesToInt(transitData, 92, 9);
+        m_operatorId = Utils.bytesToInt(transitData, 63, 8);
     }
 
     public Calendar getDateTime(){
@@ -85,11 +84,14 @@ public class Trip implements Serializable {
 
     public String getBusName(){ return m_busName;}
 
+    public String getOperatorName(){ return m_operatorName;}
+
     public void setBusFromXml(Context ctx){
         String node = "";
         String busFile = "";
         String logo = "";
         m_busName = "";
+        m_operatorName = "";
         XmlResourceParser operatorXml = ctx.getResources().getXml(R.xml.operators);
         try {
             int event = operatorXml.getEventType();
@@ -102,6 +104,7 @@ public class Trip implements Serializable {
                             if (operatorXml.getAttributeValue(null, "id").equals("" + m_operatorId)) {
                                 logo = operatorXml.getAttributeValue(null, "logo");
                                 busFile = operatorXml.getAttributeValue(null, "file");
+                                m_operatorName = operatorXml.getAttributeValue(null, "name");
                                 break outerloop;
                             }
                         }

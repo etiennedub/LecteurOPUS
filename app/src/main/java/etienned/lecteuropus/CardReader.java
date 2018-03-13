@@ -24,6 +24,7 @@ import android.nfc.tech.NfcB;
 import android.util.Log;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.lang.ref.WeakReference;
 
 /**
@@ -99,6 +100,7 @@ public class CardReader implements NfcAdapter.ReaderCallback {
                             page12to15};
 
                     Mifare mainCard = new Mifare(cardData);
+
                     mAccountCallback.get().onAccountReceived(mainCard.getCard());
 
                 } catch (IOException e) {
@@ -159,6 +161,7 @@ public class CardReader implements NfcAdapter.ReaderCallback {
                     dataTicket[3] = OpusCard.transceive(getReadApdu(1));
 
                     Opus mainCard = new Opus(dataID, dataExp, dataTransit, dataSubscription, dataTicket);
+
                     mAccountCallback.get().onAccountReceived(mainCard.getCard());
 
 

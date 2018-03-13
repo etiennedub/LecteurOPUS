@@ -5,6 +5,8 @@ package etienned.lecteuropus;
 
 import android.util.SparseIntArray;
 
+import org.xmlpull.v1.XmlSerializer;
+
 import java.lang.reflect.Field;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -18,37 +20,6 @@ public class Utils {
 
     final protected static char[] hexArray = "0123456789ABCDEF".toCharArray();
 
-
-    private Utils(){
-        // do nothing.
-    }
-
-    public final static SparseIntArray m_listBus = new SparseIntArray();
-
-    static
-    {
-        // ID Number, Real Number RTC
-        m_listBus.put(95, 800);
-        m_listBus.put(96, 801);
-        m_listBus.put(172, 803);
-        m_listBus.put(61, 807);
-        m_listBus.put(16, 28);
-        m_listBus.put(78, 330);
-        m_listBus.put(41, 74);
-        m_listBus.put(84, 350);
-        m_listBus.put(12, 18);
-        m_listBus.put(47, 87);
-        m_listBus.put(39, 77);
-        m_listBus.put(88, 377);
-        m_listBus.put(7, 11);
-        m_listBus.put(1, 1);
-        m_listBus.put(3, 4);
-        m_listBus.put(2, 3);
-        m_listBus.put(50, 19);
-        m_listBus.put(37, 74);
-
-        // 89 --> L3 (Levis)
-    }
    public static Calendar intToDateTime(int p_days, int p_mins){
        Calendar result = Calendar.getInstance();
        result.set(1997,Calendar.JANUARY ,1,0,0,0);
@@ -87,6 +58,11 @@ public class Utils {
         return reportDate;
     }
 
+    public static String DateToStringNumber(Calendar p_date) {
+        DateFormat df = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
+        String reportDate = df.format(p_date.getTime());
+        return reportDate;
+    }
 
     public static byte[] HexStringToByteArray(String s) {
         int len = s.length();
@@ -130,6 +106,5 @@ public class Utils {
         return result;
 
     }
-
 }
 

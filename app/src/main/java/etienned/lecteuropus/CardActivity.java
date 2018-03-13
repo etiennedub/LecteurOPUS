@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
@@ -17,6 +18,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -24,6 +29,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 public class CardActivity extends AppCompatActivity {
+    public static final String TAG = "CardActivity";
     Card m_Card;
     int m_OperatorId;
     int m_BusId;
@@ -40,8 +46,6 @@ public class CardActivity extends AppCompatActivity {
         LinearLayout LayoutSubscription = (LinearLayout) findViewById(R.id.layoutSubcription);
         LinearLayout LayoutTicket = (LinearLayout) findViewById(R.id.layoutTicket);
         LinearLayout layoutCardId = (LinearLayout) findViewById(R.id.layoutCardId);
-
-
 
         TextView textType = (TextView) this.findViewById(R.id.CARTE_TYPE);
         ImageView imageType = (ImageView) this.findViewById(R.id.imageType);
@@ -60,7 +64,7 @@ public class CardActivity extends AppCompatActivity {
                 textExpiration.setVisibility(View.GONE);
                 layoutCardId.setVisibility(View.GONE);
                 m_Card.getContract().get(0).setLogoFromXml(this);
-                int logoId = m_Card.getContract().get(0).getlogoId();
+                int logoId = m_Card.getContract().get(0).getLogoId();
                 if (logoId != 0) imageLogo.setImageResource(logoId);
 
                 break;
@@ -95,17 +99,17 @@ public class CardActivity extends AppCompatActivity {
                     ImageView logo = (ImageView) customSubs.findViewById(R.id.logoSubs);
                     textSubsDate.setText(Utils.DateToString(contract.get(i).getValidityDate()));
                     LayoutSubsTime.setVisibility(View.GONE);
-                    int logoId = contract.get(i).getlogoId();
+                    int logoId = contract.get(i).getLogoId();
                     if (logoId != 0) logo.setImageResource(logoId);
                     LayoutSubscription.addView(customSubs);
                 }
-                else if(contract.get(i).getnbTicket() > 0){
+                else if(contract.get(i).getNbTicket() > 0){
                     // Ticket
                     contract.get(i).setLogoFromXml(this);
                     View customTicket = inflater.inflate(R.layout.ticket, null);
                     TextView textTicket = (TextView) customTicket.findViewById(R.id.NbTicket);
                     ImageView logo = (ImageView) customTicket.findViewById(R.id.logoTicket);
-                    int nbTicket = contract.get(i).getnbTicket();
+                    int nbTicket = contract.get(i).getNbTicket();
                     String ticket = "";
                     if (nbTicket == 0 || nbTicket == 1) {
                         ticket = nbTicket + " " + getString(R.string.ticket_remaining);
@@ -113,7 +117,7 @@ public class CardActivity extends AppCompatActivity {
                         ticket = nbTicket + " " + getString(R.string.tickets_remaining);
                     }
                     textTicket.setText(ticket);
-                    int logoId = contract.get(i).getlogoId();
+                    int logoId = contract.get(i).getLogoId();
                     if (logoId != 0 && m_Card.getType() == Card.CardType.OPUS) logo.setImageResource(logoId);
                     LayoutTicket.addView(customTicket);
                     compteurTicket += 1;
@@ -127,7 +131,6 @@ public class CardActivity extends AppCompatActivity {
             textTicket.setText("0 " + getString(R.string.ticket_remaining));
             LayoutTicket.addView(customTicket);
         }
-
 
         // Transit
         ArrayList<Trip> trip = m_Card.getTrip();
@@ -168,6 +171,23 @@ public class CardActivity extends AppCompatActivity {
                 textBus.setText(name);
 
                 LayoutTransit.addView(customTransit);
+            }
+        }
+
+        if (BuildConfig.DEBUG) {
+            File path = this.getFilesDir();
+            File cardRaw = new File(path, "card.xml");
+            File expected = new File(path, "expected.xml");
+            try {
+                FileOutputStream streamRaw = new FileOutputStream(cardRaw);
+                FileOutputStream streamExpected = new FileOutputStream(expected);
+                streamRaw.write(m_Card.getRawSerialize().getBytes());
+                streamRaw.close();
+                streamExpected.write(m_Card.serialize().getBytes());
+                streamExpected.close();
+            }
+            catch (IOException e){
+                Log.e(TAG, "Error writing file");
             }
         }
     }
