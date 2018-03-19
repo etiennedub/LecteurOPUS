@@ -59,7 +59,6 @@ public class Trip implements Serializable {
         int mins = Utils.bytesToInt(transitData, 14, 11);
         m_DateTime = Utils.intToDateTime(days, mins);
 
-        Log.e(TAG, "Trip: " + Utils.TimeToString(m_DateTime));
         m_busId  = Utils.bytesToInt(transitData, 92, 9);
         m_operatorId = Utils.bytesToInt(transitData, 63, 8);
     }

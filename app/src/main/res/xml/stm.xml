@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stm>
-    <bus id="" name="METRO Ligne rouge" logo="stm_rouge" />
+    <bus id="" name="METRO Ligne orange" logo="stm_orange" />
     <bus id="" name="METRO Ligne verte" logo="stm_vert" />
     <bus id="" name="METRO Ligne jaune" logo="stm_jaune" />
     <bus id="" name="METRO Ligne bleue" logo="stm_bleue" />
@@ -222,5 +222,4 @@
     <bus id="" name="260" logo="stm_local" />
     <bus id="" name="262" logo="stm_local" />
     <bus id="" name="263" logo="stm_local" />
-
 </stm>
