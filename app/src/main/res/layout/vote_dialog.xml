@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:text="Confirmer-vous que ce trajet est bien : "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+
+    <TextView
+        android:id="@+id/operatorBusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:text="RTC - LEBUS 18"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+
+    <LinearLayout
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Comfirmer"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_bad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Erroné"
+            android:textColor="#ffff0000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -17,15 +17,16 @@
         android:weightSum="1">
 
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageView"
-            android:src="@drawable/nfc"
-            android:alpha=".75"
-            android:visibility="visible"
-            android:layout_gravity="top|center"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            android:layout_gravity="top|center"
+            android:background="@color/background"
+            android:alpha="1"
+            android:src="@drawable/nfc"
+            android:visibility="visible" />
 
         <TextView
             android:layout_width="305dp"

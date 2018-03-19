@@ -13,8 +13,8 @@
     <string name="send">Send</string>
     <string name="help_us">Help us improve the application !</string>
     <string name="thank_contribution">Thank you for your contribution</string>
-    <string name="operator_hint">Transit agencies (RTC, STM, ...)</string>
-    <string name="number_hint">Bus route</string>
+    <string name="operator_hint">Transit agencies :</string>
+    <string name="number_hint">Bus route :</string>
     <string name="card_id">Card ID</string>
     <string name="tap_card">Hold your card on the back of your device.</string>
     <string name="nfc_disable">You need to turn on NFC to continue.</string>
@@ -22,4 +22,7 @@
     <string name="subscrip_title">PASS</string>
     <string name="until">Valid until</string>
     <string name="title_activity_card">activity card</string>
+    <string name="other">Other</string>
+    <string name="operator_missing">Transit agencies (STM, RTC, ...)</string>
+    <string name="bus_missing">Bus route</string>
 </resources>

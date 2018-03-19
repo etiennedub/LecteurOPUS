@@ -75,6 +75,11 @@ public class Trip implements Serializable {
         return m_operatorId;
     }
 
+    public String getTripId(){
+        String date = Utils.DateToStringNumber(m_DateTime);
+        String time = Utils.TimeToString(m_DateTime);
+        return Utils.md5(date+time);
+    }
 
     public boolean getTransfer() {
         return m_Transfer;
@@ -142,7 +147,6 @@ public class Trip implements Serializable {
                 Log.e("CardActivity", "Error parsing stations XML file: " + e.getMessage());
             }
         }
-        if (m_busName.equals("")) m_busName = "unknown";
         m_logoId = R.mipmap.bus_logo;
         if (!logo.equals("")){
             m_logoId = ctx.getResources().getIdentifier(logo, "drawable", ctx.getPackageName());
