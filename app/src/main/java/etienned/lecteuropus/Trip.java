@@ -59,8 +59,13 @@ public class Trip implements Serializable {
         int mins = Utils.bytesToInt(transitData, 14, 11);
         m_DateTime = Utils.intToDateTime(days, mins);
 
-        m_busId  = Utils.bytesToInt(transitData, 92, 9);
-        m_operatorId = Utils.bytesToInt(transitData, 63, 8);
+        int offset = 0;
+        if(Utils.bytesToInt(transitData, 44, 12) == 0xFF8){
+            offset = 8;
+        }
+
+        m_busId  = Utils.bytesToInt(transitData, 92 + offset, 9);
+        m_operatorId = Utils.bytesToInt(transitData, 63 + offset, 8);
     }
 
     public Calendar getDateTime(){
