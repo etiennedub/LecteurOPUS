@@ -38,7 +38,7 @@ public class OpusTest extends TestCase {
 
     @Test
     public void testOneCard() throws Exception {
-        testCardsInformation("opus-01.xml");
+        testCardsInformation("opus-stm.xml");
     }
 
     @Theory

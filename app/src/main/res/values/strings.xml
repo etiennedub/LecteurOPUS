@@ -25,6 +25,10 @@
     <string name="other">Autre</string>
     <string name="operator_missing">Réseau de transport (STM, RTC, ...)</string>
     <string name="bus_missing">Numéro du parcours</string>
+    <string name="vote_question">Confirmez-vous que le trajet suivant est bien identifié ?</string>
+    <string name="vote_good">CORRECT</string>
+    <string name="vote_bad">ERRONÉ</string>
+    <string name="connection_error">Impossible de se connecter au serveur</string>
 </resources>
 
 

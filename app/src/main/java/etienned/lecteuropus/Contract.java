@@ -57,7 +57,6 @@ public class Contract implements Serializable {
         else if (Arrays.equals(page3, Utils.HexStringToByteArray("80000000"))){
             // Subscription
             m_Subscription = true; // TODO : Find validity Date in Mifare
-            //m_Valid = true;
             m_Valid = false;
 
         }

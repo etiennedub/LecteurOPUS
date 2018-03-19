@@ -227,7 +227,7 @@ public class CardActivity extends AppCompatActivity {
 
     public void addUnknown(View v) {
         if(!isInternetAvailable()){
-            Toast.makeText(this, "Impossible de se connecter au serveur", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.connection_error, Toast.LENGTH_SHORT).show();
             return;
         }
 
