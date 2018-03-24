@@ -44,9 +44,8 @@ public class Trip implements Serializable {
             m_DateTime = Utils.intToDateTime(days, mins1);
 
             // Bus number
-            m_busId = Utils.bytesToInt(page1, 13, 7);
-            m_operatorId = Utils.bytesToInt(page2, 8, 6);
-
+            m_busId = Utils.bytesToInt(page1, 11, 9);
+            m_operatorId = Utils.bytesToInt(page2, 7, 8);
         }
     }
 
@@ -60,8 +59,13 @@ public class Trip implements Serializable {
         int mins = Utils.bytesToInt(transitData, 14, 11);
         m_DateTime = Utils.intToDateTime(days, mins);
 
-        m_busId  = Utils.bytesToInt(transitData, 94, 7);
-        m_operatorId = Utils.bytesToInt(transitData, 64, 6);
+        int offset = 0;
+        if(Utils.bytesToInt(transitData, 44, 12) == 0xFF8){
+            offset = 8;
+        }
+
+        m_busId  = Utils.bytesToInt(transitData, 92 + offset, 9);
+        m_operatorId = Utils.bytesToInt(transitData, 63 + offset, 8);
     }
 
     public Calendar getDateTime(){
@@ -76,6 +80,11 @@ public class Trip implements Serializable {
         return m_operatorId;
     }
 
+    public String getTripId(){
+        String date = Utils.DateToStringNumber(m_DateTime);
+        String time = Utils.TimeToString(m_DateTime);
+        return Utils.md5(date+time);
+    }
 
     public boolean getTransfer() {
         return m_Transfer;
@@ -85,11 +94,14 @@ public class Trip implements Serializable {
 
     public String getBusName(){ return m_busName;}
 
+    public String getOperatorName(){ return m_operatorName;}
+
     public void setBusFromXml(Context ctx){
         String node = "";
         String busFile = "";
         String logo = "";
         m_busName = "";
+        m_operatorName = "";
         XmlResourceParser operatorXml = ctx.getResources().getXml(R.xml.operators);
         try {
             int event = operatorXml.getEventType();
@@ -102,6 +114,7 @@ public class Trip implements Serializable {
                             if (operatorXml.getAttributeValue(null, "id").equals("" + m_operatorId)) {
                                 logo = operatorXml.getAttributeValue(null, "logo");
                                 busFile = operatorXml.getAttributeValue(null, "file");
+                                m_operatorName = operatorXml.getAttributeValue(null, "name");
                                 break outerloop;
                             }
                         }
@@ -139,7 +152,6 @@ public class Trip implements Serializable {
                 Log.e("CardActivity", "Error parsing stations XML file: " + e.getMessage());
             }
         }
-        if (m_busName.equals("")) m_busName = "unknown";
         m_logoId = R.mipmap.bus_logo;
         if (!logo.equals("")){
             m_logoId = ctx.getResources().getIdentifier(logo, "drawable", ctx.getPackageName());

@@ -1,9 +1,16 @@
 package etienned.lecteuropus;
 
 import android.util.Log;
+import android.util.Xml;
 
+import org.xmlpull.v1.XmlSerializer;
+
+import java.io.IOException;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Calendar;
+
+import static etienned.lecteuropus.Utils.bytesToHex;
 
 /**
  * Created by etienned on 10/8/16.
@@ -57,36 +64,70 @@ public class Opus {
             contractList.add(tempo);
         }
 
-        m_Card = new Card(Card.CardType.OPUS, ID, ExpirationDate, tripList, contractList);
-//        Calendar todayOrHigher = Calendar.getInstance();
-//        boolean isSubscribed = false;
-//        for(int i = 0; i < 4; i++){
-//            int days = Utils.bytesToInt(m_dataSubscription[i], 47, 14);
-//            Calendar tempo = Utils.intToDateTime(days, 0);
-//            if (tempo.compareTo(todayOrHigher) > 0){
-//                todayOrHigher = tempo;
-//                isSubscribed = true;
-//            }
-//        }
-//        if (isSubscribed == true) {
-//            m_Card.setValidityDate(todayOrHigher);
-//            m_Card = new Card(Card.CardType.OPUS, ID, NbTicket, ExpirationDate, tripList, todayOrHigher);
-//        }
-//        else {
-//            m_Card = new Card(Card.CardType.OPUS, ID, NbTicket, ExpirationDate, tripList);
-//        }
+        m_Card = new Card(Card.CardType.OPUS, ID, ExpirationDate, tripList, contractList, this.serialize());
     }
-
-
-//    private int getTicketFromByte() {
-//        int nbTicket = (m_dataTicket[0][2] & 0xFF);
-//        nbTicket += (m_dataTicket[1][2] & 0xFF);
-//
-//        return nbTicket;
-//    }
 
     public Card getCard(){
         return m_Card;
+    }
+
+    public String serialize(){
+        XmlSerializer xmlSerializer = Xml.newSerializer();
+        StringWriter writer = new StringWriter();
+
+        try {
+            xmlSerializer.setOutput(writer);
+
+            //Start Document
+            xmlSerializer.startDocument("UTF-8", true);
+            //Open Tag <file>
+            xmlSerializer.startTag("", "Opus");
+
+            xmlSerializer.startTag("", "ID");
+            xmlSerializer.text(bytesToHex(m_dataID));
+            xmlSerializer.endTag("", "ID");
+
+            xmlSerializer.startTag("", "Expiration");
+            xmlSerializer.text(bytesToHex(m_dataExp));
+            xmlSerializer.endTag("", "Expiration");
+
+            xmlSerializer.startTag("", "Transit");
+            for (int i = 0; i < 3; i++) {
+                xmlSerializer.startTag("", "List");
+                xmlSerializer.attribute("", "index", Integer.toString(i));
+                xmlSerializer.text(bytesToHex(m_dataTransit[i]));
+                xmlSerializer.endTag("", "List");
+            }
+            xmlSerializer.endTag("", "Transit");
+
+            xmlSerializer.startTag("", "Subscription");
+            for (int i = 0; i < 3; i++) {
+                xmlSerializer.startTag("", "List");
+                xmlSerializer.attribute("", "index", Integer.toString(i));
+                xmlSerializer.text(bytesToHex(m_dataSubscription[i]));
+                xmlSerializer.endTag("", "List");
+            }
+            xmlSerializer.endTag("", "Subscription");
+
+            xmlSerializer.startTag("", "Ticket");
+            for (int i = 0; i < 3; i++) {
+                xmlSerializer.startTag("", "List");
+                xmlSerializer.attribute("", "index", Integer.toString(i));
+                xmlSerializer.text(bytesToHex(m_dataTicket[i]));
+                xmlSerializer.endTag("", "List");
+            }
+            xmlSerializer.endTag("", "Ticket");
+
+            xmlSerializer.endTag("", "Opus");
+
+            xmlSerializer.endDocument();
+
+            return writer.toString();
+        }
+        catch (IOException e){
+            Log.e("Opus", "Error serialize");
+            return "";
+        }
     }
 }
 

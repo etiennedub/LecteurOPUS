@@ -6,7 +6,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/layoutMainTransit"
-                android:background="#ffffff"
                 android:layout_margin="30dp">
 
                 <LinearLayout
@@ -58,15 +57,15 @@
                         android:layout_height="20px" />
 
                     <ImageButton
+                        android:id="@+id/addButton"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:id="@+id/addButton"
                         android:layout_gravity="left|center"
-                        android:src="@android:drawable/ic_menu_add"
-                        android:background="#ffffff"
+                        android:backgroundTint="@color/background"
                         android:clickable="true"
+                        android:nestedScrollingEnabled="false"
                         android:onClick="addUnknown"
-                        android:nestedScrollingEnabled="false" />
+                        android:src="@android:drawable/ic_menu_add" />
 
                 </LinearLayout>
 

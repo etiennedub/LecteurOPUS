@@ -14,15 +14,16 @@ import java.util.Calendar;
  * Created by etienned on 12/28/16.
  */
 public class Contract implements Serializable {
-    boolean m_Subscription;
-    boolean m_Valid;
-    int m_nbTicket;
-    int m_operatorId;
-    int m_logoId;
-    Calendar m_ValidityDate;
+    private boolean m_Subscription;
+    private boolean m_Valid;
+    private int m_nbTicket;
+    private int m_operatorId;
+    private String m_operatorName;
+    private int m_logoId;
+    private Calendar m_ValidityDate;
 
     public Contract(byte[] subscriptionData, byte[] ticketData){ // OPUS
-        m_operatorId = Utils.bytesToInt(subscriptionData, 12, 4);
+        m_operatorId = Utils.bytesToInt(subscriptionData, 9, 8);
         if(Utils.bytesToInt(subscriptionData, 40, 16) == 0){
             // Ticket
             m_Subscription = false;
@@ -42,7 +43,7 @@ public class Contract implements Serializable {
     public Contract(byte[] page3, byte[] page4, byte[] page5, byte[] page10) { // Mifare
         m_nbTicket = 0;
         m_Subscription = false;
-        m_operatorId = Utils.bytesToInt(page5, 21, 4);
+        m_operatorId = Utils.bytesToInt(page5, 18, 8);
         if (Arrays.equals(page3, Utils.HexStringToByteArray("00000000"))) {
             // Carte neuve
             m_nbTicket = page10[2] & 0x80 >> 7 |
@@ -56,7 +57,6 @@ public class Contract implements Serializable {
         else if (Arrays.equals(page3, Utils.HexStringToByteArray("80000000"))){
             // Subscription
             m_Subscription = true; // TODO : Find validity Date in Mifare
-            //m_Valid = true;
             m_Valid = false;
 
         }
@@ -76,6 +76,7 @@ public class Contract implements Serializable {
     public void setLogoFromXml(Context ctx){
         String node = "";
         String logo = "";
+        m_operatorName = "";
         XmlResourceParser operatorXml = ctx.getResources().getXml(R.xml.operators);
         try {
             int event = operatorXml.getEventType();
@@ -87,6 +88,7 @@ public class Contract implements Serializable {
                         if(node.equals("operator")) {
                             if (operatorXml.getAttributeValue(null, "id").equals("" + m_operatorId)) {
                                 logo = operatorXml.getAttributeValue(null, "logo");
+                                m_operatorName = operatorXml.getAttributeValue(null, "name");
                                 break outerloop;
                             }
                         }
@@ -104,8 +106,12 @@ public class Contract implements Serializable {
         }
     }
 
-    public int getnbTicket() {
+    public int getNbTicket() {
         return m_nbTicket;
+    }
+
+    public int getOperatorId(){
+        return m_operatorId;
     }
 
     public boolean isSubscription() {
@@ -116,7 +122,11 @@ public class Contract implements Serializable {
         return m_ValidityDate;
     }
 
-    public int getlogoId() {
+    public int getLogoId() {
         return m_logoId;
+    }
+
+    public String getOperatorName() {
+        return m_operatorName;
     }
 }

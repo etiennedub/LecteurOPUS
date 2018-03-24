@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <operators>
-    <operator id="10" name="RTC" file="rtc" logo="rtc" />
-    <operator id="4" name="STM" file="" logo="stm" />
+    <operator id="20" name="RTC" file="rtc" logo="rtc" />
+    <operator id="8" name="STM" file="stm" logo="stm" />
+    <operator id="" name="STL" file="stl" logo="stl" />
+    <operator id="" name="RTL" file="rtl" logo="rtl" />
+    <operator id="" name="RTM" file="rtm" logo="rtm" />
+    <operator id="" name="STLévis" file="stlevis" logo="stlevis" />
 </operators>
