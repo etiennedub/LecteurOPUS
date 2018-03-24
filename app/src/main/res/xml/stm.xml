@@ -1,225 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stm>
-    <bus id="" name="METRO Ligne orange" logo="stm_orange" />
-    <bus id="" name="METRO Ligne verte" logo="stm_vert" />
-    <bus id="" name="METRO Ligne jaune" logo="stm_jaune" />
-    <bus id="" name="METRO Ligne bleue" logo="stm_bleue" />
-    <bus id="" name="10" logo="stm_local" />
-    <bus id="" name="11" logo="stm_local" />
-    <bus id="" name="12" logo="stm_local" />
-    <bus id="" name="13" logo="stm_local" />
-    <bus id="" name="14" logo="stm_local" />
-    <bus id="" name="15" logo="stm_local" />
-    <bus id="" name="16" logo="stm_local" />
-    <bus id="" name="17" logo="stm_local" />
-    <bus id="" name="18" logo="stm_local" />
-    <bus id="" name="19" logo="stm_local" />
-    <bus id="" name="21" logo="stm_local" />
-    <bus id="" name="22" logo="stm_local" />
-    <bus id="" name="24" logo="stm_local" />
-    <bus id="" name="25" logo="stm_local" />
-    <bus id="" name="26" logo="stm_local" />
-    <bus id="" name="27" logo="stm_local" />
-    <bus id="" name="28" logo="stm_local" />
-    <bus id="" name="29" logo="stm_local" />
-    <bus id="" name="30" logo="stm_local" />
-    <bus id="" name="31" logo="stm_local" />
-    <bus id="" name="32" logo="stm_local" />
-    <bus id="" name="33" logo="stm_local" />
-    <bus id="" name="34" logo="stm_local" />
-    <bus id="" name="36" logo="stm_local" />
-    <bus id="" name="37" logo="stm_local" />
-    <bus id="" name="39" logo="stm_local" />
-    <bus id="" name="40" logo="stm_local" />
-    <bus id="" name="41" logo="stm_local" />
-    <bus id="" name="43" logo="stm_local" />
-    <bus id="" name="44" logo="stm_local" />
-    <bus id="" name="45" logo="stm_local" />
-    <bus id="" name="46" logo="stm_local" />
-    <bus id="" name="47" logo="stm_local" />
-    <bus id="" name="48" logo="stm_local" />
-    <bus id="" name="49" logo="stm_local" />
-    <bus id="" name="51" logo="stm_local" />
-    <bus id="" name="52" logo="stm_local" />
-    <bus id="" name="53" logo="stm_local" />
-    <bus id="" name="54" logo="stm_local" />
-    <bus id="" name="55" logo="stm_local" />
-    <bus id="" name="56" logo="stm_local" />
-    <bus id="" name="57" logo="stm_local" />
-    <bus id="" name="58" logo="stm_local" />
-    <bus id="" name="61" logo="stm_local" />
-    <bus id="" name="63" logo="stm_local" />
-    <bus id="" name="64" logo="stm_local" />
-    <bus id="" name="66" logo="stm_local" />
-    <bus id="" name="67" logo="stm_local" />
-    <bus id="" name="68" logo="stm_local" />
-    <bus id="" name="69" logo="stm_local" />
-    <bus id="" name="70" logo="stm_local" />
-    <bus id="" name="71" logo="stm_local" />
-    <bus id="" name="72" logo="stm_local" />
-    <bus id="" name="73" logo="stm_local" />
-    <bus id="" name="74" logo="stm_local" />
-    <bus id="" name="75" logo="stm_local" />
-    <bus id="" name="76" logo="stm_local" />
-    <bus id="" name="77" logo="stm_local" />
-    <bus id="" name="78" logo="stm_local" />
-    <bus id="" name="80" logo="stm_local" />
-    <bus id="" name="85" logo="stm_local" />
-    <bus id="" name="86" logo="stm_local" />
-    <bus id="" name="90" logo="stm_local" />
-    <bus id="" name="92" logo="stm_local" />
-    <bus id="" name="93" logo="stm_local" />
-    <bus id="" name="94" logo="stm_local" />
-    <bus id="" name="95" logo="stm_local" />
-    <bus id="" name="97" logo="stm_local" />
-    <bus id="" name="99" logo="stm_local" />
-    <bus id="" name="100" logo="stm_local" />
-    <bus id="" name="101" logo="stm_local" />
-    <bus id="" name="102" logo="stm_local" />
-    <bus id="" name="103" logo="stm_local" />
-    <bus id="" name="104" logo="stm_local" />
-    <bus id="" name="105" logo="stm_local" />
-    <bus id="" name="106" logo="stm_local" />
-    <bus id="" name="107" logo="stm_local" />
-    <bus id="" name="108" logo="stm_local" />
-    <bus id="" name="109" logo="stm_local" />
-    <bus id="" name="110" logo="stm_local" />
-    <bus id="" name="112" logo="stm_local" />
-    <bus id="" name="113" logo="stm_local" />
-    <bus id="" name="115" logo="stm_local" />
-    <bus id="" name="116" logo="stm_local" />
-    <bus id="" name="117" logo="stm_local" />
-    <bus id="" name="119" logo="stm_local" />
-    <bus id="" name="121" logo="stm_local" />
-    <bus id="" name="123" logo="stm_local" />
-    <bus id="" name="124" logo="stm_local" />
-    <bus id="" name="125" logo="stm_local" />
-    <bus id="" name="126" logo="stm_local" />
-    <bus id="" name="128" logo="stm_local" />
-    <bus id="" name="129" logo="stm_local" />
-    <bus id="" name="131" logo="stm_local" />
-    <bus id="" name="135" logo="stm_local" />
-    <bus id="" name="136" logo="stm_local" />
-    <bus id="" name="138" logo="stm_local" />
-    <bus id="" name="139" logo="stm_local" />
-    <bus id="" name="140" logo="stm_local" />
-    <bus id="" name="141" logo="stm_local" />
-    <bus id="" name="144" logo="stm_local" />
-    <bus id="" name="146" logo="stm_local" />
-    <bus id="" name="150" logo="stm_local" />
-    <bus id="" name="160" logo="stm_local" />
-    <bus id="" name="161" logo="stm_local" />
-    <bus id="" name="162" logo="stm_local" />
-    <bus id="" name="164" logo="stm_local" />
-    <bus id="" name="165" logo="stm_local" />
-    <bus id="" name="166" logo="stm_local" />
-    <bus id="" name="168" logo="stm_local" />
-    <bus id="" name="170" logo="stm_local" />
-    <bus id="" name="171" logo="stm_local" />
-    <bus id="" name="174" logo="stm_local" />
-    <bus id="" name="175" logo="stm_local" />
-    <bus id="" name="177" logo="stm_local" />
-    <bus id="" name="178" logo="stm_local" />
-    <bus id="" name="179" logo="stm_local" />
-    <bus id="" name="180" logo="stm_local" />
-    <bus id="" name="183" logo="stm_local" />
-    <bus id="" name="185" logo="stm_local" />
-    <bus id="" name="186" logo="stm_local" />
-    <bus id="" name="187" logo="stm_local" />
-    <bus id="" name="188" logo="stm_local" />
-    <bus id="" name="189" logo="stm_local" />
-    <bus id="" name="191" logo="stm_local" />
-    <bus id="" name="192" logo="stm_local" />
-    <bus id="" name="193" logo="stm_local" />
-    <bus id="" name="195" logo="stm_local" />
-    <bus id="" name="196" logo="stm_local" />
-    <bus id="" name="197" logo="stm_local" />
-    <bus id="" name="200" logo="stm_local" />
-    <bus id="" name="201" logo="stm_local" />
-    <bus id="" name="202" logo="stm_local" />
-    <bus id="" name="203" logo="stm_local" />
-    <bus id="" name="204" logo="stm_local" />
-    <bus id="" name="205" logo="stm_local" />
-    <bus id="" name="206" logo="stm_local" />
-    <bus id="" name="207" logo="stm_local" />
-    <bus id="" name="208" logo="stm_local" />
-    <bus id="" name="209" logo="stm_local" />
-    <bus id="" name="211" logo="stm_local" />
-    <bus id="" name="212" logo="stm_local" />
-    <bus id="" name="213" logo="stm_local" />
-    <bus id="" name="215" logo="stm_local" />
-    <bus id="" name="216" logo="stm_local" />
-    <bus id="" name="217" logo="stm_local" />
-    <bus id="" name="218" logo="stm_local" />
-    <bus id="" name="219" logo="stm_local" />
-    <bus id="" name="220" logo="stm_local" />
-    <bus id="" name="225" logo="stm_local" />
-    <bus id="" name="350" logo="stm_night" />
-    <bus id="" name="353" logo="stm_night" />
-    <bus id="" name="354" logo="stm_night" />
-    <bus id="" name="355" logo="stm_night" />
-    <bus id="" name="356" logo="stm_night" />
-    <bus id="" name="357" logo="stm_night" />
-    <bus id="" name="358" logo="stm_night" />
-    <bus id="" name="359" logo="stm_night" />
-    <bus id="" name="360" logo="stm_night" />
-    <bus id="" name="361" logo="stm_night" />
-    <bus id="" name="362" logo="stm_night" />
-    <bus id="" name="363" logo="stm_night" />
-    <bus id="" name="364" logo="stm_night" />
-    <bus id="" name="365" logo="stm_night" />
-    <bus id="" name="368" logo="stm_night" />
-    <bus id="" name="369" logo="stm_night" />
-    <bus id="" name="370" logo="stm_night" />
-    <bus id="" name="371" logo="stm_night" />
-    <bus id="" name="372" logo="stm_night" />
-    <bus id="" name="376" logo="stm_night" />
-    <bus id="" name="378" logo="stm_night" />
-    <bus id="" name="380" logo="stm_night" />
-    <bus id="" name="382" logo="stm_night" />
-    <bus id="" name="401" logo="stm_express" />
-    <bus id="" name="405" logo="stm_express" />
-    <bus id="" name="406" logo="stm_express" />
-    <bus id="" name="407" logo="stm_express" />
-    <bus id="" name="409" logo="stm_express" />
-    <bus id="" name="410" logo="stm_express" />
-    <bus id="" name="411" logo="stm_express" />
-    <bus id="" name="419" logo="stm_express" />
-    <bus id="" name="420" logo="stm_express" />
-    <bus id="" name="425" logo="stm_express" />
-    <bus id="" name="427" logo="stm_express" />
-    <bus id="" name="428" logo="stm_express" />
-    <bus id="" name="430" logo="stm_express" />
-    <bus id="" name="432" logo="stm_express" />
-    <bus id="" name="435" logo="stm_express" />
-    <bus id="" name="439" logo="stm_express" />
-    <bus id="" name="440" logo="stm_express" />
-    <bus id="" name="444" logo="stm_express" />
-    <bus id="" name="448" logo="stm_express" />
-    <bus id="" name="449" logo="stm_express" />
-    <bus id="" name="460" logo="stm_express" />
-    <bus id="" name="467" logo="stm_express" />
-    <bus id="" name="468" logo="stm_express" />
-    <bus id="" name="469" logo="stm_express" />
-    <bus id="" name="470" logo="stm_express" />
-    <bus id="" name="475" logo="stm_express" />
-    <bus id="" name="485" logo="stm_express" />
-    <bus id="" name="486" logo="stm_express" />
-    <bus id="" name="487" logo="stm_express" />
-    <bus id="" name="491" logo="stm_express" />
-    <bus id="" name="495" logo="stm_express" />
-    <bus id="" name="496" logo="stm_express" />
-    <bus id="" name="715" logo="stm_shuttle" />
-    <bus id="" name="747" logo="stm_shuttle" />
-    <bus id="" name="777" logo="stm_shuttle" />
-    <bus id="" name="252" logo="stm_local" />
-    <bus id="" name="253" logo="stm_local" />
-    <bus id="" name="254" logo="stm_local" />
-    <bus id="" name="256" logo="stm_local" />
-    <bus id="" name="257" logo="stm_local" />
-    <bus id="" name="258" logo="stm_local" />
-    <bus id="" name="259" logo="stm_local" />
-    <bus id="" name="260" logo="stm_local" />
-    <bus id="" name="262" logo="stm_local" />
-    <bus id="" name="263" logo="stm_local" />
+    <bus id="1" name="MÉTRO Ligne Verte" logo="stm_verte" />
+    <bus id="2" name="MÉTRO Ligne Orange" logo="stm_orange" />
+    <bus id="3" name="MÉTRO Ligne Jaune" logo="stm_jaune" />
+    <bus id="4" name="MÉTRO Ligne Bleue" logo="stm_bleue" />
+    <bus id="" name="10 De Lorimier" logo="stm_local" />
+    <bus id="" name="11 Parc-du-Mont-Royal / Ridgewood" logo="stm_local" />
+    <bus id="" name="12 Île-des-Soeurs" logo="stm_local" />
+    <bus id="" name="13 Christophe-Colomb" logo="stm_local" />
+    <bus id="" name="14 Amherst" logo="stm_local" />
+    <bus id="" name="15 Sainte-Catherine" logo="stm_local" />
+    <bus id="" name="16 Graham" logo="stm_local" />
+    <bus id="" name="17 Décarie" logo="stm_local" />
+    <bus id="" name="18 Beaubien" logo="stm_local" />
+    <bus id="" name="19 Chabanel / Marché Central" logo="stm_local" />
+    <bus id="" name="21 Place du Commerce" logo="stm_local" />
+    <bus id="" name="22 Notre-Dame" logo="stm_local" />
+    <bus id="" name="24 Sherbrooke" logo="stm_local" />
+    <bus id="" name="25 Angus" logo="stm_local" />
+    <bus id="" name="26 Mercier-Est" logo="stm_local" />
+    <bus id="" name="27 Boulevard Saint-Joseph" logo="stm_local" />
+    <bus id="" name="28 Honoré-Beaugrand" logo="stm_local" />
+    <bus id="" name="29 Rachel" logo="stm_local" />
+    <bus id="" name="30 Saint-Denis / Saint-Hubert" logo="stm_local" />
+    <bus id="" name="31 Saint-Denis" logo="stm_local" />
+    <bus id="" name="32 Lacordaire" logo="stm_local" />
+    <bus id="" name="33 Langelier" logo="stm_local" />
+    <bus id="" name="34 Sainte-Catherine" logo="stm_local" />
+    <bus id="" name="36 Monk" logo="stm_local" />
+    <bus id="" name="37 Jolicoeur" logo="stm_local" />
+    <bus id="" name="39 Des Grandes-Prairies" logo="stm_local" />
+    <bus id="" name="40 Henri-Bourassa-Est" logo="stm_local" />
+    <bus id="" name="41 Quartier Saint-Michel / Ahuntsic" logo="stm_local" />
+    <bus id="" name="43 Monselet" logo="stm_local" />
+    <bus id="" name="44 Armand-Bombardier" logo="stm_local" />
+    <bus id="" name="45 Papineau" logo="stm_local" />
+    <bus id="" name="46 Casgrain" logo="stm_local" />
+    <bus id="" name="47 Masson" logo="stm_local" />
+    <bus id="" name="48 Perras" logo="stm_local" />
+    <bus id="" name="49 Maurice-Duplessis" logo="stm_local" />
+    <bus id="36" name="51 Édouard-Montpetit" logo="stm_local" />
+    <bus id="" name="52 de Liège" logo="stm_local" />
+    <bus id="" name="53 Boulevard Saint-Laurent" logo="stm_local" />
+    <bus id="" name="54 Charland / Chabanel" logo="stm_local" />
+    <bus id="" name="55 Boulevard Saint-Laurent" logo="stm_local" />
+    <bus id="" name="56 Saint-Hubert" logo="stm_local" />
+    <bus id="" name="57 Pointe-Saint-Charles" logo="stm_local" />
+    <bus id="" name="58 Wellington" logo="stm_local" />
+    <bus id="" name="61 Wellington" logo="stm_local" />
+    <bus id="" name="63 Girouard" logo="stm_local" />
+    <bus id="" name="64 Grenet" logo="stm_local" />
+    <bus id="" name="66 The Boulevard" logo="stm_local" />
+    <bus id="" name="67 Saint-Michel" logo="stm_local" />
+    <bus id="49" name="68 Pierrefonds" logo="stm_local" />
+    <bus id="" name="69 Gouin" logo="stm_local" />
+    <bus id="" name="70 Bois-Franc" logo="stm_local" />
+    <bus id="" name="71 Du Centre" logo="stm_local" />
+    <bus id="" name="72 Alfred-Nobel" logo="stm_local" />
+    <bus id="" name="73 Dalton" logo="stm_local" />
+    <bus id="" name="74 Bridge" logo="stm_local" />
+    <bus id="" name="75 De la Commune" logo="stm_local" />
+    <bus id="" name="76 McArthur" logo="stm_local" />
+    <bus id="" name="77 Station Lionel-Groulx / CUSM" logo="stm_local" />
+    <bus id="" name="78 Laurendeau" logo="stm_local" />
+    <bus id="" name="80 Avenue du Parc" logo="stm_local" />
+    <bus id="" name="85 Hochelaga" logo="stm_local" />
+    <bus id="" name="86 Pointe-aux-Trembles" logo="stm_local" />
+    <bus id="" name="90 Saint-Jacques" logo="stm_local" />
+    <bus id="" name="92 Jean-Talon Ouest" logo="stm_local" />
+    <bus id="" name="93 Jean-Talon" logo="stm_local" />
+    <bus id="" name="94 D'Iberville" logo="stm_local" />
+    <bus id="" name="95 Bélanger" logo="stm_local" />
+    <bus id="" name="97 Avenue-du-Mont-Royal" logo="stm_local" />
+    <bus id="" name="99 Villeray" logo="stm_local" />
+    <bus id="" name="100 Crémazie" logo="stm_local" />
+    <bus id="" name="101 Saint-Patrick" logo="stm_local" />
+    <bus id="" name="102 Somerled" logo="stm_local" />
+    <bus id="" name="103 Monkland" logo="stm_local" />
+    <bus id="" name="104 Cavendish" logo="stm_local" />
+    <bus id="" name="105 Sherbrooke" logo="stm_local" />
+    <bus id="" name="106 Newman" logo="stm_local" />
+    <bus id="" name="107 Verdun" logo="stm_local" />
+    <bus id="" name="108 Bannantyne" logo="stm_local" />
+    <bus id="" name="109 Boulevard Shevchenko" logo="stm_local" />
+    <bus id="" name="110 Centrale" logo="stm_local" />
+    <bus id="" name="112 Airlie" logo="stm_local" />
+    <bus id="" name="113 Lapierre" logo="stm_local" />
+    <bus id="" name="115 Paré" logo="stm_local" />
+    <bus id="" name="116 Lafleur / Norman" logo="stm_local" />
+    <bus id="" name="117 O'Brien" logo="stm_local" />
+    <bus id="" name="119 Rockland" logo="stm_local" />
+    <bus id="" name="121 Sauvé / Côte-Vertu" logo="stm_local" />
+    <bus id="" name="123 Dollard" logo="stm_local" />
+    <bus id="" name="124 Victoria" logo="stm_local" />
+    <bus id="" name="125 Ontario" logo="stm_local" />
+    <bus id="" name="126 Polyvalente Émile-Legault" logo="stm_local" />
+    <bus id="" name="128 Ville-Saint-Laurent" logo="stm_local" />
+    <bus id="" name="129 Côte-Sainte-Catherine" logo="stm_local" />
+    <bus id="" name="131 De l'Assomption" logo="stm_local" />
+    <bus id="" name="135 De l'Esplanade" logo="stm_local" />
+    <bus id="" name="136 Viau" logo="stm_local" />
+    <bus id="" name="138 Notre-Dame-de-Grâce" logo="stm_local" />
+    <bus id="" name="139 Pie-IX" logo="stm_local" />
+    <bus id="" name="140 Fleury" logo="stm_local" />
+    <bus id="" name="141 Jean-Talon Est" logo="stm_local" />
+    <bus id="" name="144 Avenue des Pins" logo="stm_local" />
+    <bus id="" name="146 Christophe-Colomb / Meilleur" logo="stm_local" />
+    <bus id="" name="150 René-Lévesque" logo="stm_local" />
+    <bus id="" name="160 Barclay" logo="stm_local" />
+    <bus id="" name="161 Van Horne" logo="stm_local" />
+    <bus id="" name="162 Westminster" logo="stm_local" />
+    <bus id="" name="164 Dudemaine" logo="stm_local" />
+    <bus id="111" name="165 Côte-des-Neiges" logo="stm_local" />
+    <bus id="" name="166 Queen-Mary" logo="stm_local" />
+    <bus id="" name="168 Cité-du-Havre" logo="stm_local" />
+    <bus id="" name="170 Keller" logo="stm_local" />
+    <bus id="" name="171 Henri-Bourassa" logo="stm_local" />
+    <bus id="" name="174 Côte-Vertu-Ouest" logo="stm_local" />
+    <bus id="" name="175 Griffith / Saint-François" logo="stm_local" />
+    <bus id="" name="177 Thimens" logo="stm_local" />
+    <bus id="" name="178 Pointe-Nord / Île-des-Soeurs" logo="stm_local" />
+    <bus id="" name="179 De l'Acadie" logo="stm_local" />
+    <bus id="" name="180 De Salaberry" logo="stm_local" />
+    <bus id="" name="183 Gouin Est" logo="stm_local" />
+    <bus id="" name="185 Sherbrooke" logo="stm_local" />
+    <bus id="" name="186 Sherbrooke-Est" logo="stm_local" />
+    <bus id="" name="187 René-Lévesque" logo="stm_local" />
+    <bus id="" name="188 Couture" logo="stm_local" />
+    <bus id="" name="189 Notre-Dame" logo="stm_local" />
+    <bus id="" name="191 Broadway / Provost" logo="stm_local" />
+    <bus id="" name="192 Robert" logo="stm_local" />
+    <bus id="" name="193 Jarry" logo="stm_local" />
+    <bus id="" name="195 Sherbrooke / Notre-Dame" logo="stm_local" />
+    <bus id="" name="196 Parc-Industriel-Lachine" logo="stm_local" />
+    <bus id="" name="197 Rosemont" logo="stm_local" />
+    <bus id="" name="200 Sainte-Anne-de-Bellevue" logo="stm_local" />
+    <bus id="" name="201 Saint-Charles / Saint-Jean" logo="stm_local" />
+    <bus id="" name="202 Dawson" logo="stm_local" />
+    <bus id="" name="203 Carson" logo="stm_local" />
+    <bus id="" name="204 Cardinal" logo="stm_local" />
+    <bus id="145" name="205 Gouin" logo="stm_local" />
+    <bus id="" name="206 Roger-Pilon" logo="stm_local" />
+    <bus id="" name="207 Jacques-Bizard" logo="stm_local" />
+    <bus id="" name="208 Brunswick" logo="stm_local" />
+    <bus id="149" name="209 Des Sources" logo="stm_local" />
+    <bus id="" name="211 Bord-du-Lac" logo="stm_local" />
+    <bus id="" name="212 Sainte-Anne" logo="stm_local" />
+    <bus id="" name="213 Parc-Industriel-Saint-Laurent" logo="stm_local" />
+    <bus id="" name="215 Henri-Bourassa" logo="stm_local" />
+    <bus id="" name="216 Transcanadienne" logo="stm_local" />
+    <bus id="" name="217 Anse-à-l'Orme" logo="stm_local" />
+    <bus id="" name="218 Antoine-Faucon" logo="stm_local" />
+    <bus id="" name="219 Chemin Sainte-Marie" logo="stm_local" />
+    <bus id="" name="220 Kieran" logo="stm_local" />
+    <bus id="" name="225 Hymus" logo="stm_local" />
+    <bus id="" name="252 Navette Or Montréal-Nord" logo="stm_local" />
+    <bus id="" name="253 Navette Or Saint-Michel" logo="stm_local" />
+    <bus id="" name="254 Navette Or Rosemont" logo="stm_local" />
+    <bus id="" name="256 Navette Or LaSalle" logo="stm_local" />
+    <bus id="" name="257 Navette Or Rivière-des-Prairies" logo="stm_local" />
+    <bus id="" name="258 Navette Or Hochelaga-Maisonneuve" logo="stm_local" />
+    <bus id="" name="259 Navette Or Mercier-Ouest" logo="stm_local" />
+    <bus id="" name="260 Navette Or Anjou" logo="stm_local" />
+    <bus id="" name="262 Navette Or Côte-Saint-Luc" logo="stm_local" />
+    <bus id="" name="263 Navette Or Bordeaux-Cartierville" logo="stm_local" />
+    <bus id="" name="350 Verdun / LaSalle" logo="stm_night" />
+    <bus id="" name="353 Lacordaire / Maurice-Duplessis" logo="stm_night" />
+    <bus id="" name="354 Sainte-Anne-de-Bellevue / Centre-ville" logo="stm_night" />
+    <bus id="" name="355 Pie-IX" logo="stm_night" />
+    <bus id="" name="356 Lachine / Montréal-Trudeau / Des Sources" logo="stm_night" />
+    <bus id="" name="357 Saint-Michel" logo="stm_night" />
+    <bus id="" name="358 Sainte-Catherine" logo="stm_night" />
+    <bus id="" name="359 Papineau" logo="stm_night" />
+    <bus id="" name="360 Avenue des Pins" logo="stm_night" />
+    <bus id="" name="361 Saint-Denis" logo="stm_night" />
+    <bus id="" name="362 Hochelaga / Notre-Dame" logo="stm_night" />
+    <bus id="" name="363 Boulevard Saint-Laurent" logo="stm_night" />
+    <bus id="" name="364 Sherbrooke / Joseph-Renaud" logo="stm_night" />
+    <bus id="" name="365 Avenue du Parc" logo="stm_night" />
+    <bus id="" name="368 Avenue-du-Mont-Royal" logo="stm_night" />
+    <bus id="" name="369 Côte-des-Neiges" logo="stm_night" />
+    <bus id="" name="370 Rosemont" logo="stm_night" />
+    <bus id="" name="371 Décarie" logo="stm_night" />
+    <bus id="" name="372 Jean-Talon" logo="stm_night" />
+    <bus id="" name="376 Pierrefonds / Centre-ville" logo="stm_night" />
+    <bus id="" name="378 Sauvé / Montréal-Trudeau" logo="stm_night" />
+    <bus id="" name="380 Henri-Bourassa" logo="stm_night" />
+    <bus id="" name="382 Pierrefonds / Saint-Charles" logo="stm_night" />
+    <bus id="" name="401 Express Saint-Charles" logo="stm_express" />
+    <bus id="" name="405 Express Bord-du-Lac" logo="stm_express" />
+    <bus id="" name="406 Express Newman" logo="stm_express" />
+    <bus id="" name="407 Express Île-Bizard" logo="stm_express" />
+    <bus id="" name="409 Express Des Sources" logo="stm_express" />
+    <bus id="" name="410 Express Notre-Dame" logo="stm_express" />
+    <bus id="" name="411 Express Lionel-Groulx" logo="stm_express" />
+    <bus id="" name="419 Express John Abbott" logo="stm_express" />
+    <bus id="" name="420 Express Notre-Dame-de-Grâce" logo="stm_express" />
+    <bus id="" name="425 Express Anse-à-l'Orme" logo="stm_express" />
+    <bus id="" name="427 Express Saint-Joseph" logo="stm_express" />
+    <bus id="" name="428 Express Parcs industriels de l'Est" logo="stm_express" />
+    <bus id="" name="430 Express Pointe-aux-Trembles" logo="stm_express" />
+    <bus id="" name="432 Express Lacordaire" logo="stm_express" />
+    <bus id="" name="435 Express Du Parc / Côte-des-Neiges" logo="stm_express" />
+    <bus id="" name="439 Express Pie-IX" logo="stm_express" />
+    <bus id="" name="440 Express Charleroi" logo="stm_express" />
+    <bus id="" name="444 Express Cégep Marie-Victorin" logo="stm_express" />
+    <bus id="" name="448 Express Maurice-Duplessis" logo="stm_express" />
+    <bus id="" name="449 Express Rivière-des-Prairies" logo="stm_express" />
+    <bus id="" name="460 Express Métropolitaine" logo="stm_express" />
+    <bus id="" name="467 Express Saint-Michel" logo="stm_express" />
+    <bus id="" name="468 Express Pierrefonds / Gouin" logo="stm_express" />
+    <bus id="" name="469 Express Henri-Bourassa" logo="stm_express" />
+    <bus id="169" name="470 Express Pierrefonds" logo="stm_express" />
+    <bus id="" name="475 Express Dollard-des-Ormeaux" logo="stm_express" />
+    <bus id="" name="485 Express Antoine-Faucon" logo="stm_express" />
+    <bus id="" name="486 Express Sherbrooke" logo="stm_express" />
+    <bus id="" name="487 Express Bout-de-l'Île" logo="stm_express" />
+    <bus id="" name="491 Express Lachine" logo="stm_express" />
+    <bus id="" name="495 Express Lachine / LaSalle" logo="stm_express" />
+    <bus id="" name="496 Express Victoria" logo="stm_express" />
+    <bus id="" name="711 Parc-du-Mont-Royal / Oratoire" />
+    <bus id="" name="715 Vieux-Montréal / Vieux-Port" logo="stm_shuttle" />
+    <bus id="" name="747 Aéroport P.-E.-Trudeau / Centre-ville" logo="stm_airport" />
+    <bus id="" name="767 La Ronde / La Plage" logo="stm_shuttle" />
+    <bus id="" name="769 La Ronde" logo="stm_shuttle" />
+    <bus id="" name="777 Le Casino" logo="stm_shuttle" />
 </stm>
