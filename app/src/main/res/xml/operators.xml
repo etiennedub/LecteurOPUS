@@ -2,8 +2,8 @@
 <operators>
     <operator id="20" name="RTC" file="rtc" logo="rtc" />
     <operator id="8" name="STM" file="stm" logo="stm" />
-    <operator id="" name="STL" file="stl" logo="stl" />
-    <operator id="" name="RTL" file="rtl" logo="rtl" />
-    <operator id="" name="RTM" file="rtm" logo="rtm" />
-    <operator id="" name="STLévis" file="stlevis" logo="stlevis" />
+    <operator id="24" name="STL" file="stl" logo="stl" />
+    <operator id="12" name="RTL" file="rtl" logo="rtl" />
+    <operator id="16" name="RTM" file="rtm" logo="rtm" />
+    <operator id="64" name="STLévis" file="stlevis" logo="stlevis" />
 </operators>

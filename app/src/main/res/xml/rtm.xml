@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
 <rtm>
-    <bus id="" name="TRAIN Deux-Montagnes" logo="rtm_dm" />
-    <bus id="" name="TRAIN Vaudreuil–Hudson" logo="rtm_vh" />
-    <bus id="" name="TRAIN Saint-Jérôme" logo="rtm_sj" />
-    <bus id="" name="TRAIN Mont-Saint-Hilaire" logo="rtm_sh" />
-    <bus id="" name="TRAIN Candiac" logo="rtm_ca" />
-    <bus id="" name="TRAIN Mascouche" logo="rtm_ma" />
+    <bus id="1" logo="rtm_dm" name="TRAIN Deux-Montagnes" />
+    <bus id="2" logo="rtm_vh" name="TRAIN Vaudreuil&#8211;Hudson" />
+    <bus id="3" logo="rtm_sj" name="TRAIN Saint-J&#233;r&#244;me" />
+    <bus id="1" logo="rtm_sh" name="TRAIN Mont-Saint-Hilaire" />
+    <bus id="" logo="rtm_ca" name="TRAIN Candiac" />
+    <bus id="7" logo="rtm_ma" name="TRAIN Mascouche" />
 </rtm>
