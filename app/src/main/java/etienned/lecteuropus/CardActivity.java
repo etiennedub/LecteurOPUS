@@ -362,7 +362,7 @@ public class CardActivity extends AppCompatActivity {
             good.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(sendData(operatorName, busName, true, false))
+                    if(sendData(busName, operatorName, true, false))
                         m_AddButtons.get(index).setVisibility(View.GONE);
                     alert.cancel();
                 }
@@ -373,7 +373,7 @@ public class CardActivity extends AppCompatActivity {
             View.OnClickListener listener = new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(sendData(operatorName, busName, false, false))
+                    if(sendData(busName, operatorName, false, false))
                         m_AddButtons.get(index).setVisibility(View.GONE);
                     alert.cancel();
                 }

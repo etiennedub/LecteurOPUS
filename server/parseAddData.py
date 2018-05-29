@@ -6,12 +6,31 @@ with open('password.txt', 'r') as f:
 
 password = [i.strip() for i in password]
 print(password)
+
+tree = ET.parse('xml/operators.xml')
+root = tree.getroot()
+
+opNames = []
+for child in root:
+    opNames.append(child.attrib['name'])
+
+
 bus = {}
 with open('addData.csv', 'r') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=';', quotechar='|')
     for row in spamreader:
         row = [i.strip() for i in row]
-        id, time, busId, operatorId, busName, operatorName, add = row
+        id, time, busId, operatorId, in1, in2, add = row
+
+        # Some data are invert
+        if in1 in opNames:
+            busName = in2
+            operatorName = in1
+        elif in2 in opNames:
+            busName = in1
+            operatorName = in2
+        else:
+            continue
 
         entry = (id, time, busId, operatorId, add)
 
@@ -49,6 +68,7 @@ for child in root:
                 continue
             if(not entries):
                 continue
+
             for entry in entries:
                 userId, time, busId, opIdEntry, add = entry;
                 add = 1 if add == 'true' else -2
@@ -76,7 +96,8 @@ for child in root:
                     selectedValue = int(busId)
                     maxVal = add
 
-            if(selectedValue and maxVal > 2):
+            if(selectedValue and maxVal > 1):
+                print(opName, busName, maxVal)
                 opChild.set('id', str(selectedValue))
 
         tree.write('xml/{}.xml'.format(fileName))

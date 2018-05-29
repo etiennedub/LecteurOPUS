@@ -27,10 +27,6 @@ public class MainActivity extends AppCompatActivity implements CardReader.Accoun
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mCardReader = new CardReader(this);
-
-
-
-
     }
 
     @Override
