@@ -59,7 +59,7 @@ public class Opus {
 
         ArrayList<Contract> contractList = new ArrayList();
         // Contracts
-        for(int i = 0; i < 3; i++){
+        for(int i = 0; i < 4; i++){
             Contract tempo = new Contract(m_dataSubscription[i], m_dataTicket[i]);
             contractList.add(tempo);
         }
