@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Lecteur OPUS</string>
     <string name="card_occa">CARTE OCCASIONNELLE</string>
@@ -22,7 +23,7 @@
     <string name="until">Valide jusqu\'au</string>
     <string name="title_activity_card">activity card</string>
     <string name="other">Autre</string>
-    <string name="operator_missing">Réseau de transport (STM, RTC, ...)</string>
+    <string name="operator_missing">Réseau de transport (STM, RTC, &#8230;)</string>
     <string name="bus_missing">Numéro du parcours</string>
     <string name="vote_question">Confirmez-vous que le trajet suivant est bien identifié?</string>
     <string name="vote_good">CORRECT</string>

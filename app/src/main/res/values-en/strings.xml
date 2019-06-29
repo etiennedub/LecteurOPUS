@@ -23,7 +23,7 @@
     <string name="until">Valid until</string>
     <string name="title_activity_card">activity card</string>
     <string name="other">Other</string>
-    <string name="operator_missing">Transit agencies (STM, RTC, ...)</string>
+    <string name="operator_missing">Transit agencies (STM, RTC, &#8230;)</string>
     <string name="bus_missing">Bus route</string>
     <string name="vote_question">Do you confirm that the following route is correctly identified?</string>
     <string name="vote_good">CORRECT</string>
