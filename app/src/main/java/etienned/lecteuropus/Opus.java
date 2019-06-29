@@ -101,7 +101,7 @@ public class Opus {
             xmlSerializer.endTag("", "Transit");
 
             xmlSerializer.startTag("", "Subscription");
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 4; i++) {
                 xmlSerializer.startTag("", "List");
                 xmlSerializer.attribute("", "index", Integer.toString(i));
                 xmlSerializer.text(bytesToHex(m_dataSubscription[i]));
@@ -110,7 +110,7 @@ public class Opus {
             xmlSerializer.endTag("", "Subscription");
 
             xmlSerializer.startTag("", "Ticket");
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 4; i++) {
                 xmlSerializer.startTag("", "List");
                 xmlSerializer.attribute("", "index", Integer.toString(i));
                 xmlSerializer.text(bytesToHex(m_dataTicket[i]));

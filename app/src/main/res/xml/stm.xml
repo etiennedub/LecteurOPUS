@@ -1,6 +1,6 @@
 <stm>
-    <bus id="2" logo="stm_orange" name="METRO Ligne orange" />
     <bus id="1" logo="stm_vert" name="METRO Ligne verte" />
+    <bus id="2" logo="stm_orange" name="METRO Ligne orange" />
     <bus id="3" logo="stm_jaune" name="METRO Ligne jaune" />
     <bus id="4" logo="stm_bleue" name="METRO Ligne bleue" />
     <bus id="" logo="stm_local" name="10" />
@@ -138,7 +138,7 @@
     <bus id="" logo="stm_local" name="202" />
     <bus id="" logo="stm_local" name="203" />
     <bus id="" logo="stm_local" name="204" />
-    <bus id="" logo="stm_local" name="205" />
+    <bus id="145" logo="stm_local" name="205" />
     <bus id="" logo="stm_local" name="206" />
     <bus id="147" logo="stm_local" name="207" />
     <bus id="" logo="stm_local" name="208" />
