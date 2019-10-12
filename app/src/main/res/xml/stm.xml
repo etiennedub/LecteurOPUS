@@ -190,18 +190,21 @@
     <bus id="" logo="stm_express" name="428" />
     <bus id="" logo="stm_express" name="430" />
     <bus id="" logo="stm_express" name="432" />
-    <bus id="" logo="stm_express" name="435" />
+    <bus id="" logo="stm_express" name="435" /> <!-- trajet annulé, maintenant 465/480 -->
     <bus id="" logo="stm_express" name="439" />
     <bus id="" logo="stm_express" name="440" />
     <bus id="" logo="stm_express" name="444" />
+    <bus id="" logo="stm_express" name="445" />
     <bus id="" logo="stm_express" name="448" />
     <bus id="" logo="stm_express" name="449" />
     <bus id="" logo="stm_express" name="460" />
+    <bus id="" logo="stm_express" name="465" />
     <bus id="211" logo="stm_express" name="467" />
     <bus id="" logo="stm_express" name="468" />
     <bus id="" logo="stm_express" name="469" />
     <bus id="169" logo="stm_express" name="470" />
     <bus id="" logo="stm_express" name="475" />
+    <bus id="" logo="stm_express" name="480" />
     <bus id="" logo="stm_express" name="485" />
     <bus id="" logo="stm_express" name="486" />
     <bus id="" logo="stm_express" name="487" />
